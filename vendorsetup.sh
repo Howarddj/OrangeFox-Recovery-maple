@@ -45,7 +45,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export OF_NO_TREBLE_COMPATIBILITY_CHECK=1
 	#export OF_FORCE_MAGISKBOOT_BOOT_PATCH_MIUI=1; # if you disable this, then enable the next line
 	export OF_NO_MIUI_PATCH_WARNING=1
-	export OF_AB_DEVICE=1
+	export OF_AB_DEVICE=0
 	
 	export FOX_USE_BASH_SHELL=1
 	export FOX_ASH_IS_BASH=1
