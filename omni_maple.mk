@@ -24,17 +24,17 @@ $(call inherit-product, vendor/omni/config/common.mk)
 
 # Time Zone data for recovery
 PRODUCT_COPY_FILES += \
-    bionic/libc/zoneinfo/tzdata:recovery/root/system/usr/share/zoneinfo/tzdata
+bionic/libc/zoneinfo/tzdata:recovery/root/system/usr/share/zoneinfo/tzdata
 
 # Keylayout
 PRODUCT_COPY_FILES += \
-    device/sony/maple/gpio-keys.kl:recovery/root/system/usr/keylayout/gpio-keys.kl
+device/sony/maple/gpio-keys.kl:recovery/root/system/usr/keylayout/gpio-keys.kl
 
 PRODUCT_PROPERTY_OVERRIDES := \
-    ro.usb.pid_suffix=1F1 \
-    sys.usb.controller=a800000.dwc3 \
-    sys.usb.rndis.func.name=gsi \
-    sys.usb.rmnet.func.name=gsi
+ro.usb.pid_suffix=1F1 \
+sys.usb.controller=a800000.dwc3 \
+sys.usb.rndis.func.name=gsi \
+sys.usb.rmnet.func.name=gsi
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := maple
