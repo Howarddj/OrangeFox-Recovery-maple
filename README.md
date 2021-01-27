@@ -1,3 +1,6 @@
+
+UPDATING TO ANDROID 11. BOOTS TO SWIPE SCREEN. NO TOUCHSCREEN INPUT. (27/01/2021)
+
 # android_device_sony_maple
 Tree for building TWRP for Xperia XZ Premium
              By Sjll
