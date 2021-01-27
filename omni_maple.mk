@@ -22,6 +22,12 @@ $(call inherit-product, build/target/product/embedded.mk)
 # Inherit from our custom product configuration
 $(call inherit-product, vendor/omni/config/common.mk)
 
+PRODUCT_PROPERTY_OVERRIDES := \
+    ro.usb.pid_suffix=1F1 \
+    sys.usb.controller=a800000.dwc3 \
+    sys.usb.rndis.func.name=gsi \
+    sys.usb.rmnet.func.name=gsi
+
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := maple
 PRODUCT_NAME := omni_maple
